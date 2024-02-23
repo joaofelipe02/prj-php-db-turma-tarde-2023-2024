@@ -11,36 +11,33 @@
 </head>
 <body>
 
-  
-
-
     <form>   
         
-        <h1>cadastre se aqui</h1>
+        <h1>logue se aqui</h1>
         <p>
-          nome de Usuario      
-           <input type="text" name="nomeUsuario" id="nomeUsuario" > 
+          login   
+           <input type="text" name="login" id="login" > 
         </p>
         
         <p>
-            endereço completo
-            <input type="text" name="endereço" id="Endereco">
+            Senha
+            <input type="password" name="senha" id="senha">
         </p>
 
             <button onclick="verificarLogin()"> logar </button>
         
     </form>
-
     
-
 </body>
 
 <script>
+
     function ()verificarLogin
 
-    let nomeUsuario = Document.GetElementById("nomeUsuario");
-    let Endereco = Document.GetElementById("Endereco");
+    let login = document.getElementById('login').value;
+    let Senha = document.getElementById('senha').value;
 
-    window.open(`pgInicial.php?nomeUsuario{nomeUsuario}`)
+    window.open(`pgInicial.php?login=${login}&Senha=${senha}`);
+
 </script>
 </html>
